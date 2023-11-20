@@ -5,7 +5,7 @@ VisualStudioVersion = 17.6.33829.357
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "comp-company", "comp-company.csproj", "{E7B118C6-56E4-4A27-BF62-B249FAC51738}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CompCompanyClients", "..\CompCompanyClients\CompCompanyClients.csproj", "{39ECFF7A-2ECA-460D-A229-7DD68C4E290D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CompCompanyClients", ".\CompCompanyClients\CompCompanyClients.csproj", "{39ECFF7A-2ECA-460D-A229-7DD68C4E290D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
