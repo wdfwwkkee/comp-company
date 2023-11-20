@@ -1,9 +1,18 @@
-﻿namespace CompCompanyClients.ViewModels
+﻿using CompCompanyClients;
+using CompCompanyClients.ViewModels;
+using CompCompanyClients.Views;
+
+
+namespace CompCompanyClients.ViewModels
 {
     public class MainWindowViewModel : ViewModelBase
     {
-#pragma warning disable CA1822 // Mark members as static
-        public string Greeting => "Welcome to Avalonia!";
-#pragma warning restore CA1822 // Mark members as static
+        public MainWindowViewModel()
+        {
+            _CpuUserController = new CpuUserController();
+            _CpuUserController.DataContext = new CpuUserControllerViewModel();
+        }
+
+        public CpuUserController _CpuUserController { get; set; }
     }
 }
