@@ -1,9 +1,17 @@
-﻿namespace CompCompanyClients.ViewModels
+﻿using CompCompanyClients.ViewModels;
+using CompCompanyClients.Views;
+
+
+namespace CompCompanyClients.ViewModels
 {
     public class MainWindowViewModel : ViewModelBase
     {
-#pragma warning disable CA1822 // Mark members as static
-        public string Greeting => "Welcome to Avalonia!";
-#pragma warning restore CA1822 // Mark members as static
+        public GpuUserController _GpuUserController { get; set; }
+        public MainWindowViewModel()
+        {
+            _GpuUserController = new GpuUserController();
+            _GpuUserController.DataContext = new GpuUserControllerViewModel();
+        }
+
     }
 }
